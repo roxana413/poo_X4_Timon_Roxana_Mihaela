@@ -95,8 +95,9 @@ void Printer::PrintAdd(const char* a, const char* b)
 
 
 			// delete buffer:
-			//delete[] concatString;
+			
 			printf("%s\n", concatString);
+			delete[] concatString;
 
 		}
 	
