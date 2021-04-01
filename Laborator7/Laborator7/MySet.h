@@ -88,6 +88,8 @@ inline Set<T, Compare>::Set(const Compare& compare)
     data_capacity = 10;
     T* data = new T[data_capacity];
     data_size = 0;
+    compare = compare;
+
     
 }
 
@@ -97,6 +99,7 @@ inline Set<T, Compare>::Set(size_t capacity, const Compare& compare)
     T* data = new T[capacity];
     data_size = 0;
     data_capacity = capacity;
+    compare = compare;
 
 }
 
