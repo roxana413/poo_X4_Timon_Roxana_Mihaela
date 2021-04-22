@@ -1,0 +1,1 @@
+#include "AnalizerIterator.h"
